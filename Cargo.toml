@@ -11,8 +11,14 @@ license = "MIT OR Apache-2.0"
 edition = "2021"
 
 [dependencies]
+log = "0.4.22"
+serde = {version = "1.0.215", features =["derive"]}
+serde_json = "1.0.133"
 reqwest = { version = "0.12", features = ["json"] }
+thiserror = "2.0.4"
+oauth2 = "4.0"
 
 [dev-dependencies]
 tokio = { version = "1.42.0", features = ["full"] }
+mockito = "0.27.0"
 dotenv = "0.15.0"
